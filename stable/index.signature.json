@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "product": "atlas-ai",
+  "subject": "release-index",
+  "algorithm": "ed25519",
+  "key_id": "c2c7f6fe95cf86ce0245aa807fd13a8b981bedc73c7514708601930968b1bacf",
+  "index_sha256": "d7d6c357b656863d0c0aeacaa018a4690c4909c02a4b58eb99f3838807a23590",
+  "signature": "569SpVk+6TE6DYa/fYTKVJixg9pGTYsBG6MkU5YGGaJsOXFTFtWQCdewejRaXOe5sYqRgH2/UNj2ZBKzsfYeBQ=="
+}
