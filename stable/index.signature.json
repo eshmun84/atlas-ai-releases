@@ -4,6 +4,6 @@
   "subject": "release-index",
   "algorithm": "ed25519",
   "key_id": "c2c7f6fe95cf86ce0245aa807fd13a8b981bedc73c7514708601930968b1bacf",
-  "index_sha256": "d7d6c357b656863d0c0aeacaa018a4690c4909c02a4b58eb99f3838807a23590",
-  "signature": "569SpVk+6TE6DYa/fYTKVJixg9pGTYsBG6MkU5YGGaJsOXFTFtWQCdewejRaXOe5sYqRgH2/UNj2ZBKzsfYeBQ=="
+  "index_sha256": "ada1dcf1ccb38fc7ed5b86af5d2fdf9abb5015d22d9e059603d201d296cbc467",
+  "signature": "6ITCql5dHPVUk6xTv0uM8j59XvC0qhjz4NhK2DWg0Ks5pqGY27xz6a3gnbZVdnALP83TfnZJj2DvE/MbUiEABw=="
 }
