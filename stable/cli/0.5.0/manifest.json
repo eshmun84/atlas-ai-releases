@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "product": "atlas-ai",
+  "version": "0.5.0",
+  "binaries": [
+    {
+      "platform": "darwin-arm64",
+      "path": "v0.5.0/atlas-darwin-arm64",
+      "sha256": "471467e79860418c252022019d74ec030b8114a1873ea0a5ca3e65d6ffffa78e",
+      "size": 15994690
+    },
+    {
+      "platform": "darwin-amd64",
+      "path": "v0.5.0/atlas-darwin-amd64",
+      "sha256": "e199a858fe03f466fde60017e567cb8db442414115b39bd4276ee712c6a015c0",
+      "size": 16974192
+    },
+    {
+      "platform": "linux-amd64",
+      "path": "v0.5.0/atlas-linux-amd64",
+      "sha256": "d051dcae9b6fbb45970d4200e4682d99c3acdf16f7c6ebb30a28d0b496ab463d",
+      "size": 16753512
+    },
+    {
+      "platform": "linux-arm64",
+      "path": "v0.5.0/atlas-linux-arm64",
+      "sha256": "e69102e62ebb1bde95e471a0fd3aee8a5a3baaa0bf9d049b16c720ae745daad2",
+      "size": 15656149
+    }
+  ]
+}

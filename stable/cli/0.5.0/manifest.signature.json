@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "product": "atlas-ai",
+  "subject": "cli-bootstrap",
+  "algorithm": "ed25519",
+  "key_id": "c2c7f6fe95cf86ce0245aa807fd13a8b981bedc73c7514708601930968b1bacf",
+  "manifest_sha256": "5f220b2a5dbbaa0613ba51242bb502dc4f1dba9271bd90b420b842d81e63048a",
+  "signature": "oby6CfMmI83pA9Xae2fvrzs5p473hun6WQ/SbHjr2eqrCmgbloq86xtyb1GFSPXWs3DAkVvAvk82FuMEYRufCw=="
+}
