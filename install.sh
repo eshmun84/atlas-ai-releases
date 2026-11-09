@@ -3,6 +3,7 @@
 # Downloads atlas-bootstrap for the host platform over HTTPS, verifies the
 # pinned public SHA-256, then runs:
 #   atlas-bootstrap install --version 0.5.0 [--replace]
+#   "$HOME/.local/bin/atlas" upgrade
 #
 # Usage:
 #   curl -fsSL <published-install.sh-URL> | sh
@@ -10,9 +11,11 @@
 #   sh install.sh
 #   sh install.sh --replace
 #
-# This script does not modify PATH or Atlas Home. The bootstrap binary performs
-# the authenticated install into ~/.local/bin. There is no sudo, no eval, and no
-# URL/version override from the environment.
+# This script does not modify PATH. The bootstrap binary performs the
+# authenticated CLI install into ~/.local/bin. After that succeeds, the script
+# unsets ATLAS_HOME and runs the absolute CLI path to set up the official Atlas
+# Home runtime. Full success requires both steps. There is no sudo, no eval,
+# and no URL/version override from the environment.
 
 set -eu
 
@@ -137,7 +140,7 @@ dest="${tmpdir}/${asset}"
 
 printf '%s\n' "Downloading ${asset} for Atlas ${ATLAS_VERSION} over HTTPS."
 printf '%s\n' "The first bootstrap download trusts GitHub TLS. The bootstrap then verifies the signed CLI manifest before writing ~/.local/bin/atlas."
-printf '%s\n' "This script does not modify PATH or Atlas Home."
+printf '%s\n' "This script does not modify PATH. After the CLI install it runs atlas upgrade for the official Atlas Home."
 
 curl -fsSL --proto '=https' --proto-redir '=https' --tlsv1.2 -o "$dest" "$url" || die "download failed"
 
@@ -154,3 +157,19 @@ if [ "$REPLACE" -eq 1 ]; then
 fi
 
 "$dest" "$@"
+
+# Use the official Home. Do not honor a caller ATLAS_HOME override.
+unset ATLAS_HOME
+
+if [ ! -x "$HOME/.local/bin/atlas" ]; then
+	die "CLI install reported success but $HOME/.local/bin/atlas is missing or not executable"
+fi
+
+printf '%s\n' "Setting up Atlas Home with atlas upgrade."
+if ! "$HOME/.local/bin/atlas" upgrade; then
+	printf 'atlas install: CLI installed at %s, but Atlas Home setup failed.\n' "$HOME/.local/bin/atlas" >&2
+	printf 'atlas install: retry with: atlas upgrade\n' >&2
+	exit 1
+fi
+
+printf '%s\n' "Atlas CLI and Atlas Home are ready."
