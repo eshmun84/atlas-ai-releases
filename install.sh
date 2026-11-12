@@ -2,7 +2,7 @@
 # Canonical public installer for Atlas AI.
 # Downloads atlas-bootstrap for the host platform over HTTPS, verifies the
 # pinned public SHA-256, then runs:
-#   atlas-bootstrap install --version 0.5.0 [--replace]
+#   atlas-bootstrap install --version 0.6.0 [--replace]
 #   "$HOME/.local/bin/atlas" upgrade
 #
 # Usage:
@@ -24,13 +24,13 @@ CDPATH=''
 PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH
 
-ATLAS_VERSION='0.5.0'
+ATLAS_VERSION='0.6.0'
 ARTIFACT_BASE='https://github.com/eshmun84/atlas-ai-releases/releases/download'
 
-SHA256_DARWIN_AMD64='bbcd91d95697ee7a05cad96ac2bccd643d7e47d894434ecd741686594d28e891'
-SHA256_DARWIN_ARM64='263e4d1ce83ffce47ddfa6f5cb14c59c2f82f9d5805ad49c08c38779037283b9'
-SHA256_LINUX_AMD64='2d116446c696e7ada3b0afb4233349c7ed268603e443292d893758608d1b5bbb'
-SHA256_LINUX_ARM64='30991a5a7f719c3f724b35de20a4f7f83f1302ff3f4564ec9d7c43146db85553'
+SHA256_DARWIN_AMD64='b1542c567c8fc3198128cad8fce30c86ded2ea390e97f976fa99901ff409212b'
+SHA256_DARWIN_ARM64='b9f36c9b6823fc64155d4781bfb4dae8c0469a91f1021d60e37e2b16e29e277a'
+SHA256_LINUX_AMD64='2dc361dec4fde9602904547efdd9e00ccc696a61ec1b93559cbdd9860935bd0e'
+SHA256_LINUX_ARM64='b974f1bf4f8eb48c6a9572e889f8456818bad257af0e08be8697fa1d2cc28607'
 
 usage() {
 	printf '%s\n' "usage: sh install.sh [--replace]" >&2
