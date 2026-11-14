@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "atlas-ai",
-  "sequence": 5,
+  "sequence": 6,
   "expires_at": "2027-02-05T00:00:00Z",
   "versions": [
     {
@@ -389,6 +389,84 @@
           "signature": {
             "path": "v0.6.0/linux-arm64.signature.json",
             "sha256": "66ea894e4538a2b70d5ab4f6797a4c345be99cf9810a347c1b2f947d081bda21",
+            "size": 330
+          }
+        }
+      ]
+    },
+    {
+      "version": "0.6.1",
+      "status": "released",
+      "platforms": [
+        {
+          "platform": "darwin-amd64",
+          "distributable": {
+            "path": "v0.6.1/darwin-amd64.tar.gz",
+            "sha256": "1182e3dd2e9f188d62c320bca8f2d7f43f9cc4c93ff04519352df89989d250eb",
+            "size": 8712722
+          },
+          "provenance": {
+            "path": "v0.6.1/darwin-amd64.provenance.json",
+            "sha256": "bf12a34bae68631e5257a2cad0807695a904c81f0b3c5075845515774e2b4b32",
+            "size": 643
+          },
+          "signature": {
+            "path": "v0.6.1/darwin-amd64.signature.json",
+            "sha256": "5f57774d7ae7fd1d4e52665cd1aacc426143f99cddff0e9834091075e70884b2",
+            "size": 330
+          }
+        },
+        {
+          "platform": "darwin-arm64",
+          "distributable": {
+            "path": "v0.6.1/darwin-arm64.tar.gz",
+            "sha256": "e60016190a298e34141c34d7b4fc1c86b73d05f7c4b1737efe7b22f122c3c128",
+            "size": 8136095
+          },
+          "provenance": {
+            "path": "v0.6.1/darwin-arm64.provenance.json",
+            "sha256": "142ccfeaced382f2c2a992062fc0e013ce29eb581044185224eba87c0b5eea35",
+            "size": 643
+          },
+          "signature": {
+            "path": "v0.6.1/darwin-arm64.signature.json",
+            "sha256": "244a737695a48c86fb86d3b455bf69c734792120135453fa7364a47556bc252c",
+            "size": 330
+          }
+        },
+        {
+          "platform": "linux-amd64",
+          "distributable": {
+            "path": "v0.6.1/linux-amd64.tar.gz",
+            "sha256": "9b7f5fe6f6877f24c2a4aa4ebd7d100d77441fde5b8fbce5bca1469ab6feaeec",
+            "size": 8598751
+          },
+          "provenance": {
+            "path": "v0.6.1/linux-amd64.provenance.json",
+            "sha256": "8cbccca1033f3bfddab50094312ec7f03c619281bf96731f6af262bad93444c6",
+            "size": 642
+          },
+          "signature": {
+            "path": "v0.6.1/linux-amd64.signature.json",
+            "sha256": "f56d97c373d5912e605728a8f3736e7d2eb5351ab9094c9948ee2ade57becf9d",
+            "size": 330
+          }
+        },
+        {
+          "platform": "linux-arm64",
+          "distributable": {
+            "path": "v0.6.1/linux-arm64.tar.gz",
+            "sha256": "ab16f34a26b98089f105a0d8057b4aae554a57f815bfc1b9b204a927c1d42a7c",
+            "size": 7840356
+          },
+          "provenance": {
+            "path": "v0.6.1/linux-arm64.provenance.json",
+            "sha256": "2e92ec653b2fb4aba5f609a50577f0b20c0f5681746c1a2454c06ce89420b494",
+            "size": 642
+          },
+          "signature": {
+            "path": "v0.6.1/linux-arm64.signature.json",
+            "sha256": "c014ee3e57439db71f26c6084a321e7893a31f4251ed5c722133e8d7c15f1eae",
             "size": 330
           }
         }

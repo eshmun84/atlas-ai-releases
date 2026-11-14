@@ -2,7 +2,7 @@
 # Canonical public installer for Atlas AI.
 # Downloads atlas-bootstrap for the host platform over HTTPS, verifies the
 # pinned public SHA-256, then runs:
-#   atlas-bootstrap install --version 0.6.0 [--replace]
+#   atlas-bootstrap install --version 0.6.1 [--replace]
 #   "$HOME/.local/bin/atlas" upgrade
 #
 # Usage:
@@ -24,7 +24,7 @@ CDPATH=''
 PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH
 
-ATLAS_VERSION='0.6.0'
+ATLAS_VERSION='0.6.1'
 ARTIFACT_BASE='https://github.com/eshmun84/atlas-ai-releases/releases/download'
 
 SHA256_DARWIN_AMD64='b1542c567c8fc3198128cad8fce30c86ded2ea390e97f976fa99901ff409212b'
